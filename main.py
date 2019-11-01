@@ -15,7 +15,13 @@ if __name__ == "__main__":
             ### begin chat! have fun talking to her~~~ ###
             wAIfu.start_chat()
             ##############################################
-    
+    elif len(sys.argv) == 2:
+        if sys.argv[1] == "--train":
+            pass
+        elif sys.argv[1] == "--test":
+            pass
+        else:
+            raise Exception("Please check your arguments")
     ### Unacceptable system arguments at run time
     else:
         raise Exception("Please check your arguments")

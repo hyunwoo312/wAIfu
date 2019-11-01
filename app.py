@@ -1,4 +1,5 @@
 import sqlite3
+from wAIfu.lib.network import Seq2Seq, AdaBoost
 
 ###from lib.###
 
@@ -7,6 +8,7 @@ class Chatbot:
     def __init__(self):
         self.db = sqlite3.connect("data/chatlog.db")
         self.cursor = None
+        self.status = 0
 
     def __enter__(self):
         self.cursor = self.db.cursor()
@@ -17,7 +19,8 @@ class Chatbot:
         pass
 
     def start_chat(self):
-        pass
+        while not self.status:
+            pass
     
     def terminate(self, exit_code):
         print("Thanks for using the app :D")
