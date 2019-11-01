@@ -1,5 +1,6 @@
 ####################
 import sys
+from time import sleep
 from wAIfu.app import Chatbot
 ####################
 
