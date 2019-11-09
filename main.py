@@ -30,7 +30,7 @@ if __name__ == "__main__":
                     ### only works in Unix...
                     sys.stdout.write("\033[2K\033[1G")
                     sys.stdout.write("\r{0}\n".format("☆*:.｡.o(≧▽≦)o.｡.:*☆"))
-            print(">>>", end='')
+            sys.stdout.write("Say something to a bot to get a response!\n>>> ")
             text = input()
 
             ### test chats are not recorded in the database for sample learning. . .
